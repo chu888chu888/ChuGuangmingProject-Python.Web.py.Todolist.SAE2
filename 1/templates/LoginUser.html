@@ -8,12 +8,12 @@
 </head>
 
 <body>
-<form class="box login">
+<form class="box login" action='/todo/checkuser' method="POST">
     <fieldset class="boxBody">
         <label>用户名</label>
-        <input type="text" tabindex="1" placeholder="用户名" required>
+        <input type="text" name="txtUserName" value='chu888' tabindex="1" placeholder="用户名" required>
         <label><a href="#" class="rLink" tabindex="5">忘记密码?</a>密码</label>
-        <input type="password" tabindex="2" required>
+        <input type="password" name="txtUserPass" value='chu888' tabindex="2" required>
     </fieldset>
     <footer>
         <label>

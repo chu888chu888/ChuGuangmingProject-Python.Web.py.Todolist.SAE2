@@ -8,6 +8,7 @@ render = settings.render
 db = settings.db
 tb = 'todo'
 
+
 def get_by_id(id):
     s = db.select(tb, where='id=$id', vars=locals())
     if not s:
@@ -16,7 +17,6 @@ def get_by_id(id):
 
 
 class New:
-
     def POST(self):
         i = web.input()
         title = i.get('title', None)
@@ -27,7 +27,6 @@ class New:
 
 
 class Finish:
-
     def GET(self, id):
         todo = get_by_id(id)
         if not todo:
@@ -45,7 +44,6 @@ class Finish:
 
 
 class Edit:
-
     def GET(self, id):
         todo = get_by_id(id)
         if not todo:
@@ -63,8 +61,8 @@ class Edit:
         db.update(tb, title=title, where='id=$id', vars=locals())
         return render.error('修改成功！', '/')
 
-class Delete:
 
+class Delete:
     def GET(self, id):
         todo = get_by_id(id)
         if not todo:
@@ -74,7 +72,20 @@ class Delete:
 
 
 class Index:
-
     def GET(self):
-        todos = db.select(tb, order='finished asc, id asc')
-        return render.index(todos)
+        session = web.config._session
+        access_token = session.get('access_token', None)
+        if access_token == 'true':
+            todos = db.select(tb, order='finished asc, id asc')
+            return render.index(todos)
+        else:
+            return render.error('您没有登录，请登录', '/todo/login')
+            # todos = db.select(tb, order='finished asc, id asc')
+            # return render.index(todos)
+
+
+class reset:
+    def GET(self):
+        session = web.config._session
+        session.kill()
+        raise web.seeother('/todo/login')
