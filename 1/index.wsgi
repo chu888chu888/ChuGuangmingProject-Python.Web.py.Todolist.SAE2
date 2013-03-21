@@ -7,7 +7,7 @@ from config.url import urls
 from config import settings
 
 #是否具有调试功能
-web.config.debug = False
+web.config.debug = True
 # app = web.application(urls, globals()).wsgifunc()
 # application = sae.create_wsgi_app(app)
 

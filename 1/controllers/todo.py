@@ -1,19 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 import web
+
 from config import settings
-from datetime import datetime
+from dboperation import useroper
 
 render = settings.render
-db = settings.db
-tb = 'todo'
-
-
-def get_by_id(id):
-    s = db.select(tb, where='id=$id', vars=locals())
-    if not s:
-        return False
-    return s[0]
 
 
 class New:
@@ -22,13 +14,14 @@ class New:
         title = i.get('title', None)
         if not title:
             return render.error('标题是必须的', None)
-        db.insert(tb, title=title, post_date=datetime.now())
+        useroper.TodoTableOperation.insert(self, title)
         raise web.seeother('/')
 
 
 class Finish:
     def GET(self, id):
-        todo = get_by_id(id)
+        #todo = get_by_id(id)
+        todo = useroper.TodoTableOperation.get_by_id(self, id)
         if not todo:
             return render.error('没找到这条记录', None)
         i = web.input()
@@ -39,35 +32,35 @@ class Finish:
             finished = 0
         else:
             return render.error('您发起了一个不允许的请求', '/')
-        db.update(tb, finished=finished, where='id=$id', vars=locals())
+        useroper.TodoTableOperation.updatefinish(self, finished, id)
         raise web.seeother('/')
 
 
 class Edit:
     def GET(self, id):
-        todo = get_by_id(id)
+        todo = useroper.TodoTableOperation.get_by_id(self, id)
         if not todo:
             return render.error('没找到这条记录', None)
         return render.todo.edit(todo)
 
     def POST(self, id):
-        todo = get_by_id(id)
+        todo = useroper.TodoTableOperation.get_by_id(self, id)
         if not todo:
             return render.error('没找到这条记录', None)
         i = web.input()
         title = i.get('title', None)
         if not title:
             return render.error('标题是必须的', None)
-        db.update(tb, title=title, where='id=$id', vars=locals())
+        useroper.TodoTableOperation.updatetitle(self, title, id)
         return render.error('修改成功！', '/')
 
 
 class Delete:
     def GET(self, id):
-        todo = get_by_id(id)
+        todo = useroper.TodoTableOperation.get_by_id(self, id)
         if not todo:
             return render.error('没找到这条记录', None)
-        db.delete(tb, where='id=$id', vars=locals())
+        useroper.TodoTableOperation.delete(self, id)
         return render.error('删除成功！', '/')
 
 
@@ -76,12 +69,10 @@ class Index:
         session = web.config._session
         access_token = session.get('access_token', None)
         if access_token == 'true':
-            todos = db.select(tb, order='finished asc, id asc')
+            todos = useroper.TodoTableOperation.selectorder(self)
             return render.index(todos)
         else:
             return render.error('您没有登录，请登录', '/todo/login')
-            # todos = db.select(tb, order='finished asc, id asc')
-            # return render.index(todos)
 
 
 class reset:
