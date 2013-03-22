@@ -12,16 +12,21 @@ class New:
     def POST(self):
         i = web.input()
         title = i.get('title', None)
+        session = web.config._session
+        userinfo = session.get('userinfo', None)
+        userid = userinfo["id"];
         if not title:
             return render.error('标题是必须的', None)
-        useroper.TodoTableOperation.insert(self, title)
+        useroper.TodoTableOperation.insert(self, title, userid)
         raise web.seeother('/')
 
 
 class Finish:
     def GET(self, id):
-        #todo = get_by_id(id)
-        todo = useroper.TodoTableOperation.get_by_id(self, id)
+        session = web.config._session
+        userinfo = session.get('userinfo', None)
+        userid = userinfo["id"];
+        todo = useroper.TodoTableOperation.get_by_id(self, id, userid)
         if not todo:
             return render.error('没找到这条记录', None)
         i = web.input()
@@ -32,35 +37,44 @@ class Finish:
             finished = 0
         else:
             return render.error('您发起了一个不允许的请求', '/')
-        useroper.TodoTableOperation.updatefinish(self, finished, id)
+        useroper.TodoTableOperation.updatefinish(self, finished, id, userid)
         raise web.seeother('/')
 
 
 class Edit:
     def GET(self, id):
-        todo = useroper.TodoTableOperation.get_by_id(self, id)
+        session = web.config._session
+        userinfo = session.get('userinfo', None)
+        userid = userinfo["id"];
+        todo = useroper.TodoTableOperation.get_by_id(self, id, userid)
         if not todo:
             return render.error('没找到这条记录', None)
         return render.todo.edit(todo)
 
     def POST(self, id):
-        todo = useroper.TodoTableOperation.get_by_id(self, id)
+        session = web.config._session
+        userinfo = session.get('userinfo', None)
+        userid = userinfo["id"];
+        todo = useroper.TodoTableOperation.get_by_id(self, id, userid)
         if not todo:
             return render.error('没找到这条记录', None)
         i = web.input()
         title = i.get('title', None)
         if not title:
             return render.error('标题是必须的', None)
-        useroper.TodoTableOperation.updatetitle(self, title, id)
+        useroper.TodoTableOperation.updatetitle(self, title, id, userid)
         return render.error('修改成功！', '/')
 
 
 class Delete:
     def GET(self, id):
-        todo = useroper.TodoTableOperation.get_by_id(self, id)
+        session = web.config._session
+        userinfo = session.get('userinfo', None)
+        userid = userinfo["id"];
+        todo = useroper.TodoTableOperation.get_by_id(self, id, userid)
         if not todo:
             return render.error('没找到这条记录', None)
-        useroper.TodoTableOperation.delete(self, id)
+        useroper.TodoTableOperation.delete(self, id, userid)
         return render.error('删除成功！', '/')
 
 
@@ -69,7 +83,9 @@ class Index:
         session = web.config._session
         access_token = session.get('access_token', None)
         if access_token == 'true':
-            todos = useroper.TodoTableOperation.selectorder(self)
+            userinfo = session.get('userinfo', None)
+            userid=userinfo["id"]
+            todos = useroper.TodoTableOperation.selectorder(self, userid)
             return render.index(todos)
         else:
             return render.error('您没有登录，请登录', '/todo/login')

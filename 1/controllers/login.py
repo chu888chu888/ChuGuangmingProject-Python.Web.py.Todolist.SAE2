@@ -23,7 +23,22 @@ class CheckUser:
         #从数据库判断用户是否存在
         if useroper.UserInfoTableOperation.checkuserlogin(self, username, password):
             session.access_token = 'true'
+            session.userinfo=useroper.UserInfoTableOperation.getuserid(self, username, password)
             raise web.seeother('/')
         else:
             session.access_token = 'false'
             raise web.seeother('/todo/login')
+
+
+class RegUser:
+    def GET(self):
+        return render.RegUser()
+
+    def POST(self):
+    #获取表单信息
+        i = web.input()
+        username = i.get('txtUserName', None)
+        password = i.get('txtUserPass', None)
+        email = i.get('txtUserEmail', None)
+        useroper.UserInfoTableOperation.reguserinfo(self, username, password, email)
+        raise web.seeother('/todo/login')

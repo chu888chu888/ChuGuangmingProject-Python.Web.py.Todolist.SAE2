@@ -2,28 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="03b9564c-f5b2-4a89-8011-cc624b42261b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dboperation" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dboperation/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/sql/users.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/jquery-1.9.1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/LoginUser.html" afterPath="$PROJECT_DIR$/templates/LoginUser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/LoginUser.js" afterPath="$PROJECT_DIR$/static/script/LoginUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/RegUser.html" afterPath="$PROJECT_DIR$/templates/RegUser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/RegUser.js" afterPath="$PROJECT_DIR$/static/script/RegUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/foot.html" afterPath="$PROJECT_DIR$/templates/foot.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/login.py" afterPath="$PROJECT_DIR$/controllers/login.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/styles/reset.css" afterPath="$PROJECT_DIR$/static/styles/reset.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/styles/structure.css" afterPath="$PROJECT_DIR$/static/styles/structure.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/todo.py" afterPath="$PROJECT_DIR$/controllers/todo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/url.py" afterPath="$PROJECT_DIR$/config/url.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dboperation/useroper.py" afterPath="$PROJECT_DIR$/dboperation/useroper.py" />
     </list>
     <ignored path="1.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/settings.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363765011708" ignored="false" />
     <file path="/index.wsgi" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363845386537" ignored="false" />
-    <file path="/url.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363766780325" ignored="false" />
+    <file path="/url.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363930583880" ignored="false" />
     <file path="/Dummy.txt" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363332583273" ignored="false" />
-    <file path="/todo.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363847793018" ignored="false" />
-    <file path="/foot.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363766757720" ignored="false" />
+    <file path="/todo.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363935904696" ignored="false" />
+    <file path="/foot.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363935955420" ignored="false" />
     <file path="C:/PythonProject/Pythontest001/main2.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363672419328" ignored="false" />
     <file path="/saveupload.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363677432991" ignored="false" />
     <file path="/SaveUpload.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363677726518" ignored="false" />
-    <file path="/login.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363845397513" ignored="false" />
-    <file path="/LoginUser.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363767010892" ignored="false" />
+    <file path="/login.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363935188977" ignored="false" />
+    <file path="/LoginUser.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363932227331" ignored="false" />
     <file path="/error.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363767061201" ignored="false" />
-    <file path="/useroper.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363847760156" ignored="false" />
+    <file path="/useroper.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363934559928" ignored="false" />
+    <file path="/RegUser.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363932392072" ignored="false" />
+    <file path="/structure.css" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363931182387" ignored="false" />
+    <file path="/LoginUser.js" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363932251363" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +49,53 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="todo.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/todo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="31" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="foot.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/foot.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="20" selection-start="87" selection-end="87" vertical-scroll-proportion="0.1781076">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/login.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="28" selection-start="613" selection-end="621" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -49,19 +105,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/myconfig/url.py" />
-        <option value="$PROJECT_DIR$/mycontrollers/todo.py" />
         <option value="$PROJECT_DIR$/mycontrollers/saveupload.py" />
         <option value="$PROJECT_DIR$/templates/SaveUpload.html" />
         <option value="$PROJECT_DIR$/config/settings.py" />
-        <option value="$PROJECT_DIR$/templates/foot.html" />
-        <option value="$PROJECT_DIR$/config/url.py" />
-        <option value="$PROJECT_DIR$/templates/LoginUser.html" />
         <option value="$PROJECT_DIR$/templates/error.html" />
         <option value="$PROJECT_DIR$/index.wsgi" />
-        <option value="$PROJECT_DIR$/controllers/login.py" />
+        <option value="$PROJECT_DIR$/config/url.py" />
+        <option value="$PROJECT_DIR$/static/styles/reset.css" />
+        <option value="$PROJECT_DIR$/static/styles/structure.css" />
+        <option value="$PROJECT_DIR$/templates/LoginUser.html" />
+        <option value="$PROJECT_DIR$/static/script/LoginUser.js" />
+        <option value="$PROJECT_DIR$/static/script/RegUser.js" />
+        <option value="$PROJECT_DIR$/templates/RegUser.html" />
         <option value="$PROJECT_DIR$/dboperation/useroper.py" />
+        <option value="$PROJECT_DIR$/controllers/login.py" />
         <option value="$PROJECT_DIR$/controllers/todo.py" />
+        <option value="$PROJECT_DIR$/templates/foot.html" />
       </list>
     </option>
   </component>
@@ -97,6 +156,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -126,6 +186,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -171,9 +263,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,6 +300,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\TenYear\Desktop\ChinaPython\1\static\script" />
       <recent name="C:\Users\TenYear\Desktop\ChinaPython\1\static\styles" />
     </key>
   </component>
@@ -331,15 +437,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19512194" sideWeight="0.67154473" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20162602" sideWeight="0.67154473" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -348,6 +453,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -410,105 +516,115 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/PythonProject/todolist/todolist/code.py">
+    <entry file="file://$PROJECT_DIR$/templates/hello.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="0" selection-end="158" vertical-scroll-proportion="0.082051285" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/SaveUpload.html">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="0" selection-end="534" vertical-scroll-proportion="0.09090909" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycontrollers/saveupload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="46" selection-start="191" selection-end="1302" vertical-scroll-proportion="0.9179487" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/styles/structure.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="8" column="20" selection-start="182" selection-end="201" vertical-scroll-proportion="0.0445269">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/styles/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.041025642" />
+        <state line="26" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/foot.html">
+    <entry file="file://$PROJECT_DIR$/static/styles/structure.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="179" selection-end="179" vertical-scroll-proportion="-4.3125" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="31" selection-start="970" selection-end="970" vertical-scroll-proportion="-7.90625" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/LoginUser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="63" selection-start="628" selection-end="628" vertical-scroll-proportion="0.64126396" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="0" selection-end="497" vertical-scroll-proportion="0.37062937">
+        <state line="14" column="79" selection-start="344" selection-end="344" vertical-scroll-proportion="0.5874126">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="0" selection-end="584" vertical-scroll-proportion="0.574359">
+        <state line="14" column="38" selection-start="519" selection-end="519" vertical-scroll-proportion="0.574359">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.wsgi">
+    <entry file="file://$PROJECT_DIR$/static/script/jquery-1.9.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#38#47#0" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/LoginUser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="182" selection-end="201" vertical-scroll-proportion="-0.0445269">
+        <state line="24" column="56" selection-start="1033" selection-end="1039" vertical-scroll-proportion="-9.454545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/LoginUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="43" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/RegUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/RegUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="49" selection-start="918" selection-end="930" vertical-scroll-proportion="-10.181818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dboperation/useroper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="67" selection-start="1652" selection-end="1652" vertical-scroll-proportion="1.2051282">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="28" selection-start="613" selection-end="621" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/todo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="121" selection-end="130" vertical-scroll-proportion="-2.323077">
-          <folding>
-            <element signature="e#38#48#0" expanded="true" />
-          </folding>
+        <state line="86" column="31" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/login.py">
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="-0.16410257">
-          <folding>
-            <element signature="e#38#48#0" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dboperation/useroper.py">
+    <entry file="file://$PROJECT_DIR$/config/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="17" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.83589745">
-          <folding>
-            <element signature="e#38#53#0" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/foot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="87" selection-end="87" vertical-scroll-proportion="0.1781076">
+          <folding />
         </state>
       </provider>
     </entry>
