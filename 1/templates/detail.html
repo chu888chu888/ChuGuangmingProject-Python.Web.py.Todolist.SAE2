@@ -1,0 +1,13 @@
+$def with(detaillist)
+$:render.header()
+<div class="box">
+    <div class="box todos">
+        <h2 class="box">待办事项详情</h2>
+        <ul>
+            $for todo in detaillist:
+                <li>标题：$todo.id</li>
+                <li>时间：$todo.post_date</li>
+                <li>内容：$todo.detail</li>
+        </ul>
+    </div>
+$:render.foot()

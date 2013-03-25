@@ -27,18 +27,18 @@ class UserInfoTableOperation:
 
 class TodoTableOperation:
     @staticmethod
-    def get_by_id(self, todoid,userid):
+    def get_by_id(self, todoid, userid):
         s = settings.db.select('todo', where='id=$todoid and userid=$userid', vars=locals())
         if not s:
             return False
         return s[0]
 
     @staticmethod
-    def insert(self, title,userid):
-        settings.db.insert('todo', title=title,userid=userid, post_date=datetime.datetime.now())
+    def insert(self, title, userid, detail):
+        settings.db.insert('todo', title=title, userid=userid, detail=detail, post_date=datetime.datetime.now())
 
     @staticmethod
-    def updatefinish(self, finished, id,userid):
+    def updatefinish(self, finished, id, userid):
         settings.db.update('todo', finished=finished, where='id=$id and userid=$userid', vars=locals())
 
     @staticmethod
@@ -46,9 +46,13 @@ class TodoTableOperation:
         return settings.db.select('todo', where='userid=$userid', order='finished asc, id asc', vars=locals())
 
     @staticmethod
-    def delete(self, id,userid):
+    def selectorderbyDetail(self, id):
+        return settings.db.select('todo', where='id=$id', order='finished asc, id asc', vars=locals())
+
+    @staticmethod
+    def delete(self, id, userid):
         settings.db.delete('todo', where='id=$id and userid=$userid', vars=locals())
 
     @staticmethod
-    def updatetitle(self, title, id,userid):
-        settings.db.update('todo', title=title, where='id=$id and userid=$userid', vars=locals())
+    def updatetitle(self, title, id, userid,content):
+        settings.db.update('todo', title=title,detail=content, where='id=$id and userid=$userid', vars=locals())

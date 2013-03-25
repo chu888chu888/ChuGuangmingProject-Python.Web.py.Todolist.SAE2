@@ -12,12 +12,14 @@ class New:
     def POST(self):
         i = web.input()
         title = i.get('title', None)
+        detail = i.get('content', None)
+        #获取用户ID
         session = web.config._session
         userinfo = session.get('userinfo', None)
         userid = userinfo["id"];
         if not title:
             return render.error('标题是必须的', None)
-        useroper.TodoTableOperation.insert(self, title, userid)
+        useroper.TodoTableOperation.insert(self, title, userid, detail)
         raise web.seeother('/')
 
 
@@ -41,6 +43,17 @@ class Finish:
         raise web.seeother('/')
 
 
+class detail:
+    def GET(self, id):
+        session = web.config._session
+        access_token = session.get('access_token', None)
+        if access_token == 'true':
+            detaillist = useroper.TodoTableOperation.selectorderbyDetail(self, id)
+            return render.detail(detaillist)
+        else:
+            return render.error('您没有登录，请登录', '/todo/login')
+
+
 class Edit:
     def GET(self, id):
         session = web.config._session
@@ -62,7 +75,8 @@ class Edit:
         title = i.get('title', None)
         if not title:
             return render.error('标题是必须的', None)
-        useroper.TodoTableOperation.updatetitle(self, title, id, userid)
+        content=i.get('content',None)
+        useroper.TodoTableOperation.updatetitle(self, title, id, userid,content)
         return render.error('修改成功！', '/')
 
 
@@ -84,7 +98,7 @@ class Index:
         access_token = session.get('access_token', None)
         if access_token == 'true':
             userinfo = session.get('userinfo', None)
-            userid=userinfo["id"]
+            userid = userinfo["id"]
             todos = useroper.TodoTableOperation.selectorder(self, userid)
             return render.index(todos)
         else:
