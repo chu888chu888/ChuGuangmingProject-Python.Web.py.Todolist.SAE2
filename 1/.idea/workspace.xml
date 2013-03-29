@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="03b9564c-f5b2-4a89-8011-cc624b42261b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/helpers/fancybox_buttons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/fancybox_loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/fancybox_sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/helpers" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/helpers/jquery.fancybox-buttons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/helpers/jquery.fancybox-buttons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/helpers/jquery.fancybox-media.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/helpers/jquery.fancybox-thumbs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/helpers/jquery.fancybox-thumbs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/jquery.fancybox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/jquery.fancybox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/fancybox/jquery.fancybox.pack.js" />
-      <change type="MOVED" beforePath="C:\Users\TenYear\Desktop\ChinaPython\1\static\styles\style.css" afterPath="$PROJECT_DIR$/static/styles/dialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script/ajaxpostmessage.js" afterPath="$PROJECT_DIR$/static/script/ajaxpostmessage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/foot.html" afterPath="$PROJECT_DIR$/templates/foot.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/script/jquery-1.7.2.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.html" afterPath="$PROJECT_DIR$/templates/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/sendemail.py" afterPath="$PROJECT_DIR$/controllers/sendemail.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/settings.py" afterPath="$PROJECT_DIR$/config/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/styles/index/style.css" afterPath="$PROJECT_DIR$/static/styles/index/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/url.py" afterPath="$PROJECT_DIR$/config/url.py" />
     </list>
     <ignored path="1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,14 +27,14 @@
     <file path="/LoginUser.js" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363932251363" ignored="false" />
     <file path="/warringie6.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363938017576" ignored="false" />
     <file path="/warring.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1363937712479" ignored="false" />
-    <file path="/index.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364190820083" ignored="false" />
+    <file path="/index.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364544453528" ignored="false" />
     <file path="/detail.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364191983626" ignored="false" />
     <file path="/edit.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364192525264" ignored="false" />
     <file path="$PROJECT_DIR$/../2/index.wsgi" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364195416128" ignored="false" />
     <file path="$PROJECT_DIR$/../2/config.yaml" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364195434548" ignored="false" />
-    <file path="/header.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364536814621" ignored="false" />
+    <file path="/header.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364544231738" ignored="false" />
     <file path="$PROJECT_DIR$/../../Jquery插件/模态演示/index2.html" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364536156325" ignored="false" />
-    <file path="/style.css" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364537091242" ignored="false" />
+    <file path="/style.css" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364544364531" ignored="false" />
     <file path="/sendemail.py" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364539851217" ignored="false" />
     <file path="/ajaxpostmessage.js" changelist="03b9564c-f5b2-4a89-8011-cc624b42261b" time="1364540377304" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,37 +57,15 @@
         <entry file="file://$PROJECT_DIR$/controllers/sendemail.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="20" column="23" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#38#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="url.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/url.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="19" selection-start="584" selection-end="598" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajaxpostmessage.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ajaxpostmessage.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/script/ajaxpostmessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="46" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.3859649">
-              <folding>
-                <marker date="1364540397871" expanded="true" signature="2261:2265" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sendmessage.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Jquery插件/模态演示/sendmessage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="33" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
+            <state line="43" column="46" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,7 +74,25 @@
       <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="73" selection-start="954" selection-end="954" vertical-scroll-proportion="-6.032258">
+            <state line="12" column="74" selection-start="737" selection-end="737" vertical-scroll-proportion="-5.032258">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="74" selection-start="2322" selection-end="2322" vertical-scroll-proportion="0.47173488">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-1.7.2.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/script/jquery-1.7.2.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,7 +101,43 @@
       <file leaf-file-name="foot.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/foot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="43" selection-start="311" selection-end="311" vertical-scroll-proportion="-0.7096774">
+            <state line="23" column="39" selection-start="726" selection-end="726" vertical-scroll-proportion="-12.064516">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialog.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/styles/dialog.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="1" selection-start="2669" selection-end="2669" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reset.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/styles/reset.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/styles/index/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="190" column="11" selection-start="2702" selection-end="2712" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="structure.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/styles/structure.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,21 +157,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/templates/LoginUser.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/detail.html" />
         <option value="$PROJECT_DIR$/templates/todo/edit.html" />
         <option value="$PROJECT_DIR$/controllers/todo.py" />
         <option value="$PROJECT_DIR$/dboperation/useroper.py" />
         <option value="$PROJECT_DIR$/../../Jquery插件/模态演示/style.css" />
         <option value="$PROJECT_DIR$/../../Jquery插件/模态演示/index2.html" />
-        <option value="$PROJECT_DIR$/templates/header.html" />
         <option value="$PROJECT_DIR$/static/styles/style.css" />
-        <option value="$PROJECT_DIR$/static/styles/index/style.css" />
         <option value="$PROJECT_DIR$/templates/foot.html" />
         <option value="$PROJECT_DIR$/config/settings.py" />
         <option value="$PROJECT_DIR$/config/url.py" />
         <option value="$PROJECT_DIR$/controllers/sendemail.py" />
         <option value="$PROJECT_DIR$/static/script/ajaxpostmessage.js" />
+        <option value="$PROJECT_DIR$/templates/header.html" />
+        <option value="$PROJECT_DIR$/static/styles/index/style.css" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -193,7 +207,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -223,6 +236,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -288,6 +341,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,8 +350,8 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Jquery插件/模态演示/sendmessage.php" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -309,8 +363,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\TenYear\Desktop\ChinaPython\1\static\styles" />
       <recent name="C:\Users\TenYear\Desktop\ChinaPython\1\static\script" />
+      <recent name="C:\Users\TenYear\Desktop\ChinaPython\1\static\styles" />
       <recent name="C:\Users\TenYear\Desktop\ChinaPython\1\static\kindeditor" />
       <recent name="C:\Users\TenYear\Desktop\ChinaPython\1\static\ie6" />
     </key>
@@ -448,14 +502,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24267101" sideWeight="0.67154473" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.247557" sideWeight="0.67154473" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -539,23 +593,54 @@
         <state line="0" column="0" selection-start="0" selection-end="37" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Jquery插件/模态演示/style.css">
+    <entry file="file://$PROJECT_DIR$/config/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="0" selection-start="462" selection-end="3326" vertical-scroll-proportion="0.9245283">
+        <state line="13" column="27" selection-start="397" selection-end="397" vertical-scroll-proportion="0.4631579" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/todo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="170" selection-end="270" vertical-scroll-proportion="0.4528302" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="19" selection-start="584" selection-end="598" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Jquery插件/模态演示/index2.html">
+    <entry file="file://$PROJECT_DIR$/controllers/sendemail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="3" selection-start="2522" selection-end="2522" vertical-scroll-proportion="0.9183673">
+        <state line="20" column="23" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/ajaxpostmessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="46" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/jquery-1.7.2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/foot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="39" selection-start="726" selection-end="726" vertical-scroll-proportion="-12.064516">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/styles/dialog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="10" selection-start="359" selection-end="359" vertical-scroll-proportion="0.5283019">
+        <state line="93" column="1" selection-start="2669" selection-end="2669" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -574,72 +659,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/styles/index/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="17" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.87650084">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="397" selection-end="397" vertical-scroll-proportion="0.4631579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/todo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="170" selection-end="270" vertical-scroll-proportion="0.4528302">
-          <folding>
-            <element signature="e#38#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="73" selection-start="954" selection-end="954" vertical-scroll-proportion="-6.032258">
+        <state line="12" column="74" selection-start="737" selection-end="737" vertical-scroll-proportion="-5.032258">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/url.py">
+    <entry file="file://$PROJECT_DIR$/static/styles/index/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="19" selection-start="584" selection-end="598" vertical-scroll-proportion="0.0">
+        <state line="190" column="11" selection-start="2702" selection-end="2712" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Jquery插件/模态演示/sendmessage.php">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="33" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
+        <state line="50" column="74" selection-start="2322" selection-end="2322" vertical-scroll-proportion="0.47173488">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/sendemail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#38#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/foot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="43" selection-start="311" selection-end="311" vertical-scroll-proportion="-0.7096774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/ajaxpostmessage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="46" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.3859649">
-          <folding>
-            <marker date="1364540397871" expanded="true" signature="2261:2265" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
