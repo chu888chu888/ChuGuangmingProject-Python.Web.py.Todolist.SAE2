@@ -9,9 +9,9 @@ db = web.database(dbn='mysql', user=sae.const.MYSQL_USER, pw=sae.const.MYSQL_PAS
 render = web.template.render('templates/', cache=False)
 
 config = web.storage(
-    email='oooo@qq.com',
+    email='5211486@qq.com',
     site_name='任务跟踪',
-    site_desc='',
+    site_desc='web.py基于SAE的演示案例',
     static='/static',
 )
 

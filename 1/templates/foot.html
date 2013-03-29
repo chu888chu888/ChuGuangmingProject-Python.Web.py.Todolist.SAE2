@@ -1,13 +1,28 @@
+<div class="foot">
+    Copyright&copy; $config.site_name
+    作者 <a href="">开发者：楚广明</a>
+    &nbsp;
+    <a href="/todo/reset">注销当前登录</a>
+    <a href="http://webpy.org/" target="_blank">
+        <img src="$config.static/images/webpy_ss.png" alt="powered by web.py"/></a>
+    <a class="modalbox" href="#inline">意见反馈</a>
+</div>
+</div>
 
 
-    <div class="foot">
-        Copyright&copy; $config.site_name
-        作者 <a href="">开发者：楚广明</a>
-        &nbsp;
-        <a href="/todo/reset">注销当前登录</a>
-        <a href="http://webpy.org/" target="_blank"><img src="$config.static/images/webpy_ss.png" alt="powered by web.py" /></a>
-    </div>
+<!-- hidden inline form -->
+<div id="inline">
+    <h2>联系我们</h2>
 
+    <form id="contact" name="contact" action="#" method="post">
+        <label for="email">你的邮件</label>
+        <input type="email" id="email" name="email" class="txt">
+        <br>
+        <label for="msg">你想要对我们说</label>
+        <textarea id="msg" name="msg" class="txtarea"></textarea>
+
+        <button id="send">意见反馈</button>
+    </form>
 </div>
 </body>
 </html>
