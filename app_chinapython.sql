@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: w.rdc.sae.sina.com.cn:3307
--- 生成日期: 2013 年 03 月 25 日 14:32
+-- 生成日期: 2013 年 03 月 31 日 13:26
 -- 服务器版本: 5.5.23
 -- PHP 版本: 5.2.9
 
@@ -18,6 +18,30 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 -- 数据库: `app_chinapython`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `logs`
+--
+
+CREATE TABLE IF NOT EXISTS `logs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `log` text NOT NULL,
+  `datetime` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=53 ;
+
+--
+-- 转存表中的数据 `logs`
+--
+
+INSERT INTO `logs` (`id`, `log`, `datetime`) VALUES
+(50, '那估计', '2013-03-27-16:09:02'),
+(51, '开发者的微信号：oZfN9jgzVGy0hckH4uIGCCEF2NAE 接收方的微信号：gh_41d883ddb465 发送时间：1364371886 发信类型：文本 ', '2013-03-27-16:11:26'),
+(52, '开发者的微信号：oZfN9jgzVGy0hckH4uIGCCEF2NAE 接收方的微信号：gh_41d883ddb465 发送时间：1364372248 发信类型：文本 ', '2013-03-27-16:17:04'),
+(48, '开发者的微信号：oZfN9jgzVGy0hckH4uIGCCEF2NAE 接收方的微信号：gh_41d883ddb465 发送时间：1364370047 发信类型：文本 发信内容:sssss', '2013-03-27-15:40:48'),
+(49, '开发者的微信号：oZfN9jgzVGy0hckH4uIGCCEF2NAE 接收方的微信号：gh_41d883ddb465 发送时间：1364370134 发信类型：文本 发信内容:{''FromUserName'': ''oZfN9jgzVGy0hckH4uIGCCEF2NAE'', ''MsgId'': ''5859925105169137980'', ''ToUserName'': ''gh_41d883ddb465'', ''Content'': u''\\u4e86\\u4e86\\u4e86\\u4e86\\u4e86'', ''MsgType'': ''text'', ''CreateTime'': ''1364370134''}', '2013-03-27-15:41:50');
 
 -- --------------------------------------------------------
 
@@ -37,10 +61,33 @@ CREATE TABLE IF NOT EXISTS `sessions` (
 --
 
 INSERT INTO `sessions` (`session_id`, `atime`, `data`) VALUES
-('fea96e568d46ae6eea2c2fafdf62982c72b0ee1e', '2013-03-25 14:28:33', 'KGRwMQpTJ2FjY2Vzc190b2tlbicKcDIKUyd0cnVlJwpwMwpzUydpcCcKcDQKVjIyMi4zMy44MS4x\nOQpwNQpzUyd1c2VyaW5mbycKcDYKY2NvcHlfcmVnCl9yZWNvbnN0cnVjdG9yCnA3Cihjd2ViLnV0\naWxzClN0b3JhZ2UKcDgKY19fYnVpbHRpbl9fCmRpY3QKcDkKKGRwMTAKUyduYW1lJwpwMTEKVmNo\ndTg4OApwMTIKc1MnYWRtaW4nCnAxMwpJMApzUydsb2dpbl9jb3VudCcKcDE0CkwxMEwKc1MnZW1h\naWwnCnAxNQpWY2h1ODg4QGdtYWlsLmNvbQpwMTYKc1MnbGFzdF9sb2dpbicKcDE3CkwyMDEwMDEw\nMUwKc1MnZnVsbF9uYW1lJwpwMTgKVmNodTg4OApwMTkKc1MncGFzc3dvcmQnCnAyMApWY2h1ODg4\nCnAyMQpzUydpZCcKcDIyCkwxTApzUydndWVzdCcKcDIzCkkxCnN0UnAyNApzUydzZXNzaW9uX2lk\nJwpwMjUKUydmZWE5NmU1NjhkNDZhZTZlZWEyYzJmYWZkZjYyOTgyYzcyYjBlZTFlJwpwMjYKcy4=\n'),
-('30e983b4c7a72dc2c95cb54162f64894363328ab', '2013-03-25 13:32:26', 'KGRwMQpTJ2lwJwpwMgpWMjE4LjMwLjExNi45NQpwMwpzUydzZXNzaW9uX2lkJwpwNApTJzMwZTk4\nM2I0YzdhNzJkYzJjOTVjYjU0MTYyZjY0ODk0MzYzMzI4YWInCnA1CnMu\n'),
-('26fa3217a621a30ebc757956ad81521a21b2c6ed', '2013-03-25 13:10:20', 'KGRwMQpTJ2lwJwpwMgpWMjE4LjMwLjExNi45NQpwMwpzUydzZXNzaW9uX2lkJwpwNApTJzI2ZmEz\nMjE3YTYyMWEzMGViYzc1Nzk1NmFkODE1MjFhMjFiMmM2ZWQnCnA1CnMu\n'),
-('0fce145574b289c1ecfbb71879d6faa97dc5cc96', '2013-03-25 10:19:12', 'KGRwMQpTJ2FjY2Vzc190b2tlbicKcDIKUyd0cnVlJwpwMwpzUydpcCcKcDQKVjEyMy4xNTAuMTgy\nLjE1MgpwNQpzUyd1c2VyaW5mbycKcDYKY2NvcHlfcmVnCl9yZWNvbnN0cnVjdG9yCnA3Cihjd2Vi\nLnV0aWxzClN0b3JhZ2UKcDgKY19fYnVpbHRpbl9fCmRpY3QKcDkKKGRwMTAKUyduYW1lJwpwMTEK\nVmNodTg4OApwMTIKc1MnYWRtaW4nCnAxMwpJMApzUydsb2dpbl9jb3VudCcKcDE0CkwxMEwKc1Mn\naWQnCnAxNQpMMUwKc1MnbGFzdF9sb2dpbicKcDE2CkwyMDEwMDEwMUwKc1MnZnVsbF9uYW1lJwpw\nMTcKVmNodTg4OApwMTgKc1MncGFzc3dvcmQnCnAxOQpWY2h1ODg4CnAyMApzUydlbWFpbCcKcDIx\nClZjaHU4ODhAZ21haWwuY29tCnAyMgpzUydndWVzdCcKcDIzCkkxCnN0UnAyNApzUydzZXNzaW9u\nX2lkJwpwMjUKUycwZmNlMTQ1NTc0YjI4OWMxZWNmYmI3MTg3OWQ2ZmFhOTdkYzVjYzk2JwpwMjYK\ncy4=\n');
+('980d52b4d4ee504cc8bf294032d03037cfa165d3', '2013-03-31 13:25:24', 'KGRwMQpTJ2lwJwpwMgpWMjIyLjMzLjgxLjE5CnAzCnNTJ3Nlc3Npb25faWQnCnA0ClMnOTgwZDUy\nYjRkNGVlNTA0Y2M4YmYyOTQwMzJkMDMwMzdjZmExNjVkMycKcDUKcy4=\n');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `textmessage`
+--
+
+CREATE TABLE IF NOT EXISTS `textmessage` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `fromuser` varchar(200) NOT NULL,
+  `touser` varchar(200) NOT NULL,
+  `datetime` varchar(200) NOT NULL,
+  `content` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+
+--
+-- 转存表中的数据 `textmessage`
+--
+
+INSERT INTO `textmessage` (`id`, `fromuser`, `touser`, `datetime`, `content`) VALUES
+(1, 'oZfN9jgzVGy0hckH4uIGCCEF2NAE', 'gh_41d883ddb465', '2013-03-27-16:17:04', '了了了了了'),
+(2, 'oZfN9jgzVGy0hckH4uIGCCEF2NAE', 'gh_41d883ddb465', '2013-03-27-16:18:22', '了了了了了'),
+(3, 'oZfN9jgzVGy0hckH4uIGCCEF2NAE', 'gh_41d883ddb465', '2013-03-27-16:35:02', '模棱两可'),
+(4, 'oZfN9jgzVGy0hckH4uIGCCEF2NAE', 'gh_41d883ddb465', '2013-03-27-16:38:59', '噢噢噢'),
+(5, 'oZfN9jldlaUU--rbUKCtjETvWLMI', 'gh_41d883ddb465', '2013-03-29-13:17:53', '扫马枪');
 
 -- --------------------------------------------------------
 
@@ -56,15 +103,16 @@ CREATE TABLE IF NOT EXISTS `todo` (
   `userid` int(11) NOT NULL,
   `detail` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=38 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=40 ;
 
 --
 -- 转存表中的数据 `todo`
 --
 
 INSERT INTO `todo` (`id`, `title`, `finished`, `post_date`, `userid`, `detail`) VALUES
-(35, '测试2', 0, '2013-03-25 13:49:19', 1, '9999999999999999999999'),
-(36, '测试2', 1, '2013-03-25 13:49:30', 1, '测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2');
+(36, '测试2', 0, '2013-03-25 13:49:30', 1, '测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2测试2'),
+(38, '测试修改的第2功能', 0, '2013-03-31 13:21:35', 1, '测试OKchu999应该看不到'),
+(39, '测试功能', 0, '2013-03-31 13:22:06', 2, '测试chu888应该看不到。');
 
 -- --------------------------------------------------------
 

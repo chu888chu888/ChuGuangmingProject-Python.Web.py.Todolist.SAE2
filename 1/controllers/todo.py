@@ -8,15 +8,20 @@ from dboperation import useroper
 render = settings.render
 
 
+def getSessionUserID():
+    session = web.config._session
+    userinfo = session.get('userinfo', None)
+    userid = userinfo["id"];
+    return userid
+
+
 class New:
     def POST(self):
         i = web.input()
         title = i.get('title', None)
         detail = i.get('content', None)
         #获取用户ID
-        session = web.config._session
-        userinfo = session.get('userinfo', None)
-        userid = userinfo["id"];
+        userid = getSessionUserID()
         if not title:
             return render.error('标题是必须的', None)
         useroper.TodoTableOperation.insert(self, title, userid, detail)
@@ -25,9 +30,7 @@ class New:
 
 class Finish:
     def GET(self, id):
-        session = web.config._session
-        userinfo = session.get('userinfo', None)
-        userid = userinfo["id"];
+        userid = getSessionUserID()
         todo = useroper.TodoTableOperation.get_by_id(self, id, userid)
         if not todo:
             return render.error('没找到这条记录', None)
@@ -56,18 +59,14 @@ class detail:
 
 class Edit:
     def GET(self, id):
-        session = web.config._session
-        userinfo = session.get('userinfo', None)
-        userid = userinfo["id"];
+        userid = getSessionUserID()
         todo = useroper.TodoTableOperation.get_by_id(self, id, userid)
         if not todo:
             return render.error('没找到这条记录', None)
         return render.todo.edit(todo)
 
     def POST(self, id):
-        session = web.config._session
-        userinfo = session.get('userinfo', None)
-        userid = userinfo["id"];
+        userid = getSessionUserID()
         todo = useroper.TodoTableOperation.get_by_id(self, id, userid)
         if not todo:
             return render.error('没找到这条记录', None)
@@ -75,16 +74,14 @@ class Edit:
         title = i.get('title', None)
         if not title:
             return render.error('标题是必须的', None)
-        content=i.get('content',None)
-        useroper.TodoTableOperation.updatetitle(self, title, id, userid,content)
+        content = i.get('content', None)
+        useroper.TodoTableOperation.updatetitle(self, title, id, userid, content)
         return render.error('修改成功！', '/')
 
 
 class Delete:
     def GET(self, id):
-        session = web.config._session
-        userinfo = session.get('userinfo', None)
-        userid = userinfo["id"];
+        userid = getSessionUserID()
         todo = useroper.TodoTableOperation.get_by_id(self, id, userid)
         if not todo:
             return render.error('没找到这条记录', None)
@@ -97,8 +94,7 @@ class Index:
         session = web.config._session
         access_token = session.get('access_token', None)
         if access_token == 'true':
-            userinfo = session.get('userinfo', None)
-            userid = userinfo["id"]
+            userid = getSessionUserID()
             todos = useroper.TodoTableOperation.selectorder(self, userid)
             return render.index(todos)
         else:
