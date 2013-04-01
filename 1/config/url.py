@@ -15,7 +15,7 @@ urls = (
     '/todo/checkuser', pre_fix + 'login.CheckUser',
     '/todo/reguser', pre_fix + 'login.RegUser',
     '/todo/reset', pre_fix + 'todo.reset',
-    '/todo/sendmail',pre_fix+'sendemail.send',
+    '/todo/sendmail', pre_fix + 'sendemail.send',
     '/warringie6', pre_fix + 'warring.WarringIE6',
     '/todo/saveupload', 'mycontrollers.saveupload.SaveUpload'
 )
